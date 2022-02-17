@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato';
+}
+header {
+    grid-area: cabecalho;
+    background-color: #2d263e;
+    
+}
+
+nav {
+    grid-area: navegacao;
+    background-color: #2d263e;
+  
+}
+
+main {
+    grid-area: principal;
+    /*#f8f8ff*/
+    background-color: #f8f8ff;
+}
+
+footer {
+    grid-area: rodape;
+    background-color: #2d263e;
+   
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: 
+    'cabecalho navegacao'
+    'principal principal'
+    'rodape rodape';
+}
+
+.logo {
+    display: block;
+    margin-top: 10px;
+    float: left;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.titulo {
+  float: left;
+  font-size: 2vw;
+  margin-top: 35px;
+  color: #f8f8ff;
+  cursor: pointer;
+}
+
+
+.navegacao ul {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.navegacao li a{
+   text-decoration: none;
+   align-items: center;
+   font-size: 1.5vw;
+   color: #f8f8ff;
+}
+
+.navegacao li a:hover {
+    
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao, .historia {
+    padding: 25px;
+}
+
+.apresentacao h1, .historia h2 {
+    padding-bottom: 15px;
+    text-align: center;
+    border-bottom: solid #ccc 1px;
+}
+
+.apresentacao p, .historia p {
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+aside {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container a {
+    float: left;
+    
+}
+
+.jogos{
+    width: 98%;
+}
+
+.jogos a {
+    color: #000;
+    text-decoration: none;
+}
+
+.container a:hover{
+    background-color: #2d263e5b;
+}
+
+.jogos a img{
+    width: 30%;
+    padding: 20px;
+    float: left;
+    clear: both;
+}
+
+.jogos a p{
+    margin-top: 15px;
+}
+
+section {
+    width: 70%;
+}
+
+.formato {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.apresentacao p {
+    line-height: 20px;
+}
+
+h2 {
+    padding: 20px;
+    text-align: center;
+    border-bottom: solid 1px #ccc;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------*/
+
+.cards {
+    position: relative;
+    overflow: hidden;
+    background-color: #6c6877  ;
+    margin: 10px;
+    width: 29%;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #f8f8ff;
+}
+
+.pokemon{
+    width: 70%;
+    height: 50%;
+}
+
+.tipos{
+    display: flex;
+    width: 28%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.tipos #img1{
+    margin: 30px 30px 10px 20px;
+}
+
+.tipos, .pokemon{
+    display: inline-block;
+    
+    
+}
+
+.tipos img{
+    
+    width: 50%; 
+    
+    
+}
+.cards img{
+    max-width: 100%;
+    transition: all 0.3s;
+    display: block;
+    margin-left: 25%;
+    margin-bottom: 5px;
+}
+
+
+.cards:after,
+.cards:before{
+    content: ""; /*Um corpo vazio para eles apareceream*/
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cards:before {
+    border-left: 1.5px solid #2d263e;
+    border-right: 1.5px solid #2d263e;
+    transform: scaleY(0);
+}
+
+
+.cards:after {
+    border-bottom: 1.5px solid #2d263e;
+    border-top: 1.5px solid #2d263e;
+    transform: scaleX(0);
+}
+
+
+.cards:hover:before{
+    transform: scaleY(1);
+}
+
+.cards:hover:after{
+    transform: scaleX(1);
+}
+
+.cards:hover{
+    transform: scale(1.05);
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------*/
+.pokebola{
+    display: flex;
+    justify-content: center;
+}
+
+.pokebola img{
+    float: left;
+    display: inline-block;
+}
+
+.pokebola h2{
+    border-bottom: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.pokebola #poke2{
+    float: right;
+}
+
+.card-content h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #f8f8ff;
+    width: 35%;
+    border-radius: 10px;
+    background-color: #2d263e;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.card-content p {
+    line-height: 20px;
+    text-align: justify;
+}
+
+.videos{
+    height: 51.2%;
+    width: 98%;
+    background-color: #2d263e;
+    border-radius: 3px;
+    
+}
+
+.videos h2 {
+    color: #f8f8ff;
+}
+
+
+.unico{
+    padding: 12px;
+    text-align: center;
+    color: #f8f8ff;
+}
+
+.unico h3 {
+    padding: 5px;
+    color: #f8f8ff;
+}
+
+footer p {
+    font-size: 1.2vw;
+    color: #f8f8ff;
+    text-align: center;
+    margin-top: 40px;
+}

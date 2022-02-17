@@ -1,0 +1,44 @@
+FLOAT
+	
+float = flutua para os lados
+right = para a direita
+left = para a esquerda
+clear: both = limpa a formatação do float
+
+DISPLAY
+
+display: block = cada elemento vai ter sua própria linha
+// largura e altura serão desconsiderados
+display: inline = todos os elementos vão ficar na mesma linha
+display: inline-block = todos vão ficar na mesma linha, mas a 
+altura e largura serão considerados
+
+FLEX-BOX
+
+display: flex, preparando ele 
+flex-direction: column ou row(da a direção dos itens dentro do flex)
+flex-wrap: wrap = quebra a linha
+justify-content: flex-start = justifica o conteúdo na esquerda
+		 flex-end = justicica o conteúdo a direita
+		 center = centraliza
+		 space-between = deixa um espaço igual entre 
+		 os componentes 
+align-items: flex-start, flex-end, center (alinha na vertical)
+flex-grow: 10, elepega um espaço a mais para ele
+
+CSS GRID
+
+display: grid, preparando ele
+grid-template-columns: (quantidade e largura das colunas) 50% 50%
+1fr = significa 1 fraguimento, ou seja, o resto que sobrar
+grid-template-rows: (quantidade e largura das linhas) 50% 25% 12.5%
+grid-area: nome; dá um nome para cada parte do html e define como
+eles serão organizados dentro da página
+min-height: 100vh = altura toda
+grid-template-areas:define quantos quadrados vai ocupar
+'cabecalho cabecalho'
+'navegacao conteudo'
+'rodape rodape'
+
+#2d263e
+#f0d9ed;
